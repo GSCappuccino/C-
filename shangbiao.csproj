@@ -1,0 +1,763 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A729CA8B-94D3-49CE-91FA-0B21DB3537AA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>shangbiao</RootNamespace>
+    <AssemblyName>shangbiao</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>G:\working\Setup1\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <TargetCulture>zh-Hans</TargetCulture>
+    <ApplicationRevision>6</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>2</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>34475CED382148139E4F369376F66FD1F3053FFB</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>MyApp_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <WarningLevel>2</WarningLevel>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <WarningLevel>2</WarningLevel>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BarChart">
+      <HintPath>C:\Users\G-S\Desktop\file\bin\BarChart.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.SuperGrid, Version=11.7.0.6, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar2, Version=11.7.0.6, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.SuperGrid.Design, Version=11.7.0.6, Culture=neutral, PublicKeyToken=1fea3f5d8d482bff, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\x86\Release\bin\Microsoft.Office.Interop.Word.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="changepassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="changepassword.Designer.cs">
+      <DependentUpon>changepassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Each_f_statistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Each_f_statistics.Designer.cs">
+      <DependentUpon>Each_f_statistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindManager.Designer.cs">
+      <DependentUpon>FindManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFather.cs" />
+    <Compile Include="list_change_import.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="list_change_import.Designer.cs">
+      <DependentUpon>list_change_import.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_manage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_manage.Designer.cs">
+      <DependentUpon>User_manage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YNcleanALL_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YNcleanALL_f.Designer.cs">
+      <DependentUpon>YNcleanALL_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_524_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_524_f.Designer.cs">
+      <DependentUpon>_524_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewManager.Designer.cs">
+      <DependentUpon>NewManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics_Chart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistics_Chart.Designer.cs">
+      <DependentUpon>Statistics_Chart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics_first.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistics_first.Designer.cs">
+      <DependentUpon>Statistics_first.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics_Find_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistics_Find_f.Designer.cs">
+      <DependentUpon>Statistics_Find_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_303_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_303_f.Designer.cs">
+      <DependentUpon>_303_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileChose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileChose.Designer.cs">
+      <DependentUpon>FileChose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="list_fourth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="list_fourth.Designer.cs">
+      <DependentUpon>list_fourth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="list_second.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="list_second.Designer.cs">
+      <DependentUpon>list_second.cs</DependentUpon>
+    </Compile>
+    <Compile Include="list_third.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="list_third.Designer.cs">
+      <DependentUpon>list_third.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="uniquelistone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uniquelistone.Designer.cs">
+      <DependentUpon>uniquelistone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_101_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_101_f.Designer.cs">
+      <DependentUpon>_101_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_102_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_102_f.Designer.cs">
+      <DependentUpon>_102_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_103_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_103_f.Designer.cs">
+      <DependentUpon>_103_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_104_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_104_f.Designer.cs">
+      <DependentUpon>_104_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_201_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_201_f.Designer.cs">
+      <DependentUpon>_201_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_202_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_202_f.Designer.cs">
+      <DependentUpon>_202_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_301_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_301_f.Designer.cs">
+      <DependentUpon>_301_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_302_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_302_f.Designer.cs">
+      <DependentUpon>_302_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_304_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_304_f.Designer.cs">
+      <DependentUpon>_304_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_305_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_305_f.Designer.cs">
+      <DependentUpon>_305_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_306_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_306_f.Designer.cs">
+      <DependentUpon>_306_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_307_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_307_f.Designer.cs">
+      <DependentUpon>_307_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_308_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_308_f.Designer.cs">
+      <DependentUpon>_308_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_4_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_4_f.Designer.cs">
+      <DependentUpon>_4_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_511_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_511_f.Designer.cs">
+      <DependentUpon>_511_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_512_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_512_f.Designer.cs">
+      <DependentUpon>_512_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_521_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_521_f.Designer.cs">
+      <DependentUpon>_521_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_522_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_522_f.Designer.cs">
+      <DependentUpon>_522_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_523_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_523_f.Designer.cs">
+      <DependentUpon>_523_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_531_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_531_f.Designer.cs">
+      <DependentUpon>_531_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_532_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_532_f.Designer.cs">
+      <DependentUpon>_532_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_541_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_541_f.Designer.cs">
+      <DependentUpon>_541_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_542_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_542_f.Designer.cs">
+      <DependentUpon>_542_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_551_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_551_f.Designer.cs">
+      <DependentUpon>_551_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_552_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_552_f.Designer.cs">
+      <DependentUpon>_552_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_553_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_553_f.Designer.cs">
+      <DependentUpon>_553_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_554_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_554_f.Designer.cs">
+      <DependentUpon>_554_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_561_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_561_f.Designer.cs">
+      <DependentUpon>_561_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_562_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_562_f.Designer.cs">
+      <DependentUpon>_562_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_563_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_563_f.Designer.cs">
+      <DependentUpon>_563_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_564_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_564_f.Designer.cs">
+      <DependentUpon>_564_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_565_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_565_f.Designer.cs">
+      <DependentUpon>_565_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_571_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_571_f.Designer.cs">
+      <DependentUpon>_571_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_572_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_572_f.Designer.cs">
+      <DependentUpon>_572_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_6_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_6_f.Designer.cs">
+      <DependentUpon>_6_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_701_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_701_f.Designer.cs">
+      <DependentUpon>_701_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_702_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_702_f.Designer.cs">
+      <DependentUpon>_702_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_703_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_703_f.Designer.cs">
+      <DependentUpon>_703_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_704_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_704_f.Designer.cs">
+      <DependentUpon>_704_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_705_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_705_f.Designer.cs">
+      <DependentUpon>_705_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_706_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_706_f.Designer.cs">
+      <DependentUpon>_706_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_707_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_707_f.Designer.cs">
+      <DependentUpon>_707_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_7_f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_7_f.Designer.cs">
+      <DependentUpon>_7_f.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="changepassword.resx">
+      <DependentUpon>changepassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Each_f_statistics.resx">
+      <DependentUpon>Each_f_statistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindManager.resx">
+      <DependentUpon>FindManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="list_change_import.resx">
+      <DependentUpon>list_change_import.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewManager.resx">
+      <DependentUpon>NewManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics_Chart.resx">
+      <DependentUpon>Statistics_Chart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics_first.resx">
+      <DependentUpon>Statistics_first.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics_Find_f.resx">
+      <DependentUpon>Statistics_Find_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_manage.resx">
+      <DependentUpon>User_manage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YNcleanALL_f.resx">
+      <DependentUpon>YNcleanALL_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileChose.resx">
+      <DependentUpon>FileChose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="list_fourth.resx">
+      <DependentUpon>list_fourth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="list_second.resx">
+      <DependentUpon>list_second.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="list_third.resx">
+      <DependentUpon>list_third.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="uniquelistone.resx">
+      <DependentUpon>uniquelistone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_101_f.resx">
+      <DependentUpon>_101_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_102_f.resx">
+      <DependentUpon>_102_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_103_f.resx">
+      <DependentUpon>_103_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_104_f.resx">
+      <DependentUpon>_104_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_201_f.resx">
+      <DependentUpon>_201_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_202_f.resx">
+      <DependentUpon>_202_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_301_f.resx">
+      <DependentUpon>_301_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_302_f.resx">
+      <DependentUpon>_302_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_303_f.resx">
+      <DependentUpon>_303_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_304_f.resx">
+      <DependentUpon>_304_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_305_f.resx">
+      <DependentUpon>_305_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_306_f.resx">
+      <DependentUpon>_306_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_307_f.resx">
+      <DependentUpon>_307_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_308_f.resx">
+      <DependentUpon>_308_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_4_f.resx">
+      <DependentUpon>_4_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_511_f.resx">
+      <DependentUpon>_511_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_512_f.resx">
+      <DependentUpon>_512_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_521_f.resx">
+      <DependentUpon>_521_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_522_f.resx">
+      <DependentUpon>_522_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_523_f.resx">
+      <DependentUpon>_523_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_524_f.resx">
+      <DependentUpon>_524_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_531_f.resx">
+      <DependentUpon>_531_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_532_f.resx">
+      <DependentUpon>_532_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_541_f.resx">
+      <DependentUpon>_541_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_542_f.resx">
+      <DependentUpon>_542_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_551_f.resx">
+      <DependentUpon>_551_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_552_f.resx">
+      <DependentUpon>_552_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_553_f.resx">
+      <DependentUpon>_553_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_554_f.resx">
+      <DependentUpon>_554_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_561_f.resx">
+      <DependentUpon>_561_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_562_f.resx">
+      <DependentUpon>_562_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_563_f.resx">
+      <DependentUpon>_563_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_564_f.resx">
+      <DependentUpon>_564_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_565_f.resx">
+      <DependentUpon>_565_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_571_f.resx">
+      <DependentUpon>_571_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_572_f.resx">
+      <DependentUpon>_572_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_6_f.resx">
+      <DependentUpon>_6_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_701_f.resx">
+      <DependentUpon>_701_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_702_f.resx">
+      <DependentUpon>_702_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_703_f.resx">
+      <DependentUpon>_703_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_704_f.resx">
+      <DependentUpon>_704_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_705_f.resx">
+      <DependentUpon>_705_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_706_f.resx">
+      <DependentUpon>_706_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_707_f.resx">
+      <DependentUpon>_707_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_7_f.resx">
+      <DependentUpon>_7_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="MyApp_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="申2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
